@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','FormController@index');
+Route::post('InsertData','FormController@store');
+Route::get('ListData','FormController@create');
+Route::get('Del/{id}','FormController@show');
+Route::get('edit/{id}','FormController@edit');
+Route::post('update/{id}','FormController@updateData');

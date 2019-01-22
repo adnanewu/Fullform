@@ -22,12 +22,12 @@ class Houseinfo extends Migration
             $table->string('Mother_Name');
             $table->string('Occupation');
             $table->string('Mobile');
-            $table->string('NID_Passpoer');
+            $table->string('NID_Passport');
             $table->string('Education');
             $table->string('Date_of_Birth');
             $table->string('Gender');
             $table->string('Religion');
-            $table->string('Marital_Staus');
+            $table->string('Marital_Status');
             $table->string('Present_Address');
             $table->string('Ward');
             $table->string('Thana');
@@ -36,8 +36,8 @@ class Houseinfo extends Migration
             $table->string('Yearly_income');
             $table->string('have_you_taken_any_traning_before');
             $table->string('If_yes_then_how_many_days');
-            $table->string('Do_you_have_iny_particular_trainning?');
-            $table->string('Do_you_want_any_training?');
+            $table->string('Do_you_have_any_particular_trainning');
+            $table->string('Do_you_want_any_training');
             $table->rememberToken();
             $table->timestamps();
         });
