@@ -29,13 +29,19 @@
   Household_Name:<input type="text" name="Household_Name" placeholder="Household_Name">
         <br>
         <br>
-  Father/Husband_Name:<input type="text" name="Father/Husband_Name" placeholder="Father/Husband_Name">
+  Father_Husband_Name:<input type="text" name="Father_Husband_Name" placeholder="Father_Husband_Name">
         <br>
         <br>
   Mother_Name:<input type="text" name="Mother_Name" placeholder="Mother_Name">
         <br>
         <br>
-  Occupation:<input type="text" name="Occupation" placeholder="Occupation">
+  Occupation:<SELECT name="Occupation">
+               <OPTION Value="1">Service</OPTION>
+               <OPTION Value="2">Business</OPTION>
+               <OPTION Value="3">Teacher</OPTION>
+               <OPTION Value="4">Doctor</OPTION>
+               </SELECT>
+               <br>
         <br>
         <br>
   Mobile:<input type="text" name="Mobile" placeholder="Mobile">
@@ -45,32 +51,61 @@
         <br>
         <br>
    
-  Education:<input type="text" name="Education" placeholder="Education">
-  
+  Education:<SELECT name="Education">
+               <OPTION Value="1">Below SSC</OPTION>
+               <OPTION Value="2">SSC</OPTION>
+               <OPTION Value="3">HSC</OPTION>
+               <OPTION Value="4">BSC</OPTION>
+               <OPTION Value="5">Above BSC</OPTION>
+               </SELECT>
+               <br>
         <br>
         <br>               
   Date_of_Birth:<input type="date" name="Date_of_Birth" placeholder="Date_of_Birth">
         <br>
         <br>      
-   Gender:<input type="text" name="Gender" placeholder="Gender">
+   Gender:<SELECT name="gender">
+               <OPTION Value="1">MALE</OPTION>
+               <OPTION Value="2">FEMALE</OPTION>
+               </SELECT>
+               <br>
         <br>
         <br>     
-   Religion:<input type="text" name="Religion" placeholder="Religion">
-        <br>
-        <br>
-  Marital_Status:<input type="text" name="Marital_Status" placeholder="Marital_Status">
-        <br>
+   Religion:<SELECT name="Religion">
+               <OPTION Value="1">Islam</OPTION>
+               <OPTION Value="2">Hindu</OPTION>
+               <OPTION Value="3">Bhuddist</OPTION>
+               <OPTION Value="4">Christan</OPTION>
+               </SELECT>
+               <br>
+  Marital_Status:<SELECT name="Marital_Status">
+               <OPTION Value="1">Single</OPTION>
+               <OPTION Value="2">Married</OPTION>
+               <OPTION Value="3">Devorced</OPTION>
+               <OPTION Value="4">Widower</OPTION>
+               </SELECT>
+               <br>
         <br>
  Present_Address:<input type="text" name="Present_Address" placeholder="Present_Address">
         <br>
         <br>
-   Ward:<input type="text" name="Ward" placeholder="Ward">
+   Ward:<SELECT name="Ward">
+               <OPTION Value="1">Ward1</OPTION>
+               <OPTION Value="2">Ward2</OPTION>
+               <OPTION Value="3">Ward3</OPTION>
+               </SELECT>
         <br>
         <br>
-   Thana:<input type="text" name="Thana" placeholder="Thana">
-        <br>
-        <br>
-   District:<input type="text" name="District" placeholder="District">
+   Thana:<SELECT name="Thana">
+               <OPTION Value="1">Thana1</OPTION>
+               <OPTION Value="2">Thana2</OPTION>
+               <OPTION Value="3">Thana3</OPTION>
+               </SELECT>
+   District:<SELECT name="District">
+               <OPTION Value="1">Barisal</OPTION>
+               <OPTION Value="2">popuakhali</OPTION>
+               <OPTION Value="3">kolatoli</OPTION>
+               </SELECT>
         <br>
         <br> 
    Affected_Land_No:<input type="text" name="Affected_Land_No" placeholder="Affected_Land_No">
@@ -85,7 +120,8 @@
    If_yes_then_how_many_days:<input type="text" name="If_yes_then_how_many_days" placeholder="If_yes_then_how_many_days">
         <br>
         <br>
-    Do_you_have_any_particular_trainning:<input type="text" name="Do_you_have_any_particular_trainning" placeholder="Do_you_have_any_particular_trainning?">
+    Do_you_have_any_particular_trainning:<input type="radio" name="Do_you_have_any_particular_trainning" value="1"  checked>YES
+    <input type="radio" name="Do_you_have_any_particular_trainning" value="0" >NO
         <br>
         <br>
     Do_you_want_any_training:<input type="text" name="Do_you_want_any_training" placeholder="Do_you_want_any_training">

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <title></title>
+<title></title>
 </head>
 <body>
   <center><a href="/">ADD Data</a></center>
-  
   <table align="center" border="1">
     <tr>
       <th>No</th>
@@ -35,17 +33,25 @@
       <th>Action</th>
       
     </tr>
- @foreach($data as $key=>$val)
-  <?php  
-  if($val->gender==1)
-    $gender='Male';
-  else
-    $gender='Female';
+  @foreach($data as $key=>$val)
   
-     ?>
+  <?php  
+  if($val->Gender==1)
+    $Gender='Male';
+  else
+    $Gender='Female';
+?>
 
+   
+   <!-- if -->($val->Do_you_have_any_particular_trainning==1)
+    <!-- $Do_you_have_any_particular_trainning='Yes'; -->
+  <!-- else -->
+    <!-- $Do_you_have_any_particular_trainning='NO'; -->
+  <!-- ?> -->
+
+  
   <tr>
-      <td>{{++$key}}</td>
+  	  <td>{{++$key}}</td>
       <td>{{$val->Household_Number}}</td>
       <td>{{$val->Household_Name}}</td>
       <td>{{$val->Father_Husband_Name}}</td>
@@ -55,7 +61,7 @@
       <td>{{$val->NID_Passport}}</td>
       <td>{{$val->Education}}</td>
       <td>{{$val->Date_of_Birth}}</td>
-      <td>{{$gender}}</td>
+      <td>{{$val->Gender}}</td>
       <td>{{$val->Religion}}</td>
       <td>{{$val->Marital_Status}}</td>
       <td>{{$val->Present_Address}}</td>
@@ -70,10 +76,10 @@
       <td>{{$val->Do_you_want_any_training}}</td>
       <td><a href="/Del/{{$val->id}}">Delete</a> || <a href="/edit/{{$val->id}}">Edit</a></td>
     </tr>
+
     @endforeach
   </table>
 
 </body>
 </html>
-
 

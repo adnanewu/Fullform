@@ -18,9 +18,13 @@
       Mother_Name:<input type="text" name="Mother_Name" value="{{$data->Mother_Name}}">
       <br>
       <br>
-      Occupation:<input type="text" name="Occupation" value="{{$data->Occupation}}">
-      <br>
-      <br>
+      Occupation:<SELECT name="Occupation">
+               <OPTION Value="1">Service</OPTION>
+               <OPTION Value="2">Business</OPTION>
+               <OPTION Value="3">Teacher</OPTION>
+               <OPTION Value="4">Doctor</OPTION>
+               </SELECT>
+               <br>
       Mobile:<input type="text" name="Mobile" value="{{$data->Mobile}}">
       <br>
       <br>
@@ -30,12 +34,18 @@
       Education:<input type="text" name="Education" value="{{$data->Education}}">
       <br>
       <br>
-      Date_of_Birth:<input type="date" name="Date_of_Birth" value="{{$Date_of_Birth}}">
+      Date_of_Birth:<input type="date" name="Date_of_Birth" value="{{$data->Date_of_Birth}}">
       <br>
       <br>
-      Gender:<input type="text" name="Gender" value="{{$data->Gender}}">
-      <br>
-      <br>
+      Gender:<SELECT name="gender" $gender = DB::table('infos')->where('male', 'female')->pluck('gender');>
+      <OPTION Value="1" >MALE</OPTION>
+      <OPTION Value="2" >FEMALE</OPTION>
+      </SELECT>
+            
+        <br>
+        <br> 
+               <br>
+               <br>
       Religion:<input type="text" name="Religion" value="{{$data->Religion}}">
       <br>
       <br>
@@ -66,9 +76,11 @@
       If_yes_then_how_many_days:<input type="text" name="If_yes_then_how_many_days" value="{{$data->If_yes_then_how_many_days}}">
       <br>
       <br>
-      Do_you_have_any_particular_trainning:<input type="text" name="Do_you_have_any_particular_trainning" value="{{$data->Do_you_have_any_particular_trainning}}">
+      Do_you_have_any_particular_trainning:<input type="radio" name="Do_you_have_any_particular_trainning" value="1" checked>YES
+      <input type="radio" name="Do_you_have_any_particular_trainning" value="0">NO
       <br>
       <br>
+     
       Do_you_want_any_training:<input type="text" name="Do_you_want_any_training" value="{{$data->Do_you_want_any_training}}">
       <br>
       <br>
